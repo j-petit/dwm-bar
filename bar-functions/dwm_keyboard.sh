@@ -9,9 +9,9 @@
 dwm_keyboard () {
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "unicode" ]; then
-        printf "⌨ %s" "$(setxkbmap -query | awk '/layout/{print $2}')"
+        printf "⌨ %s" "$(xkb-switch)"
     else
-        printf "KEY %s" "$(setxkbmap -query | awk '/layout/{print $2}')"
+        printf "KEY %s" "$(xkb-switch)"
     fi
     printf "%s\n" "$SEP2"
 }
