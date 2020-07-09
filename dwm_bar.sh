@@ -29,7 +29,7 @@ export SEP2=" "
 . "$DIR/bar-functions/dwm_mpc.sh"
 . "$DIR/bar-functions/dwm_spotify.sh"
 #. "$DIR/bar-functions/dwm_resources.sh"
-. "$DIR/bar-functions/dwm_battery.sh"
+#. "$DIR/bar-functions/dwm_battery.sh"
 #. "$DIR/bar-functions/dwm_mail.sh"
 #. "$DIR/bar-functions/dwm_backlight.sh"
 . "$DIR/bar-functions/dwm_alsa.sh"
@@ -47,6 +47,6 @@ export SEP2=" "
 while true
 do
     #xsetroot -name "$(dwm_connman)$(dwm_countdown)$(dwm_alarm.sh)$(dwm_transmission)$(dwm_cmus)$(dwm_mpc)$(dwm_spotify)$(dwm_resources)$(dwm_battery)$(dwm_mail)$(dwm_backlight)$(dwm_alsa)$(dwm_pulse)$(dwm_weather)$(dwm_vpn)$(dwm_networkmanager)$(dwm_keyboard)$(dwm_ccurse)$(dwm_date)"
-    xsetroot -name "$(dwm_keyboard)$(dwm_alsa)$(dwm_battery)$(dwm_networkmanager)$(dwm_date)$(dwm_weather)"
+    xsetroot -name "$(dwm_keyboard)$(dwm_alsa)$(dwm_networkmanager)$(dwm_date)$(dwm_weather)"
     sleep 1
 done
